@@ -6,7 +6,7 @@
 /*   By: yagame <yagame@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/19 16:34:15 by abenajib          #+#    #+#             */
-/*   Updated: 2025/01/27 13:10:29 by yagame           ###   ########.fr       */
+/*   Updated: 2025/01/28 08:13:17 by yagame           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,8 @@ typedef struct s_game
 
 //MAP FUNCTIONS START--------------------------------------------
 
+void	remove_exit(t_game *game, mlx_t *mlx);
+void	my_put_player(t_game *game, char *str, int x, int y);
 void	my_keyhook(mlx_key_data_t keydata, void *param);
 
 void	ft_putnbr(int n);
